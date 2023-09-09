@@ -3,7 +3,7 @@ import './About.css'
 export default function About() {
     return (
         <div id='about' className="about page-width">
-            <h2>About Me</h2>
+            <h2>QUI SUIS-JE</h2>
             <p>
                 Grandi en Île-de-France, je me suis dirigé dans une formation plutôt commerciale pour le début de mes études supérieures, avant de me rendre compte que je souhaitais enfin lier <strong>passion et profession</strong>. Passé par une école du web chez <strong>Webstart</strong> à Paris, en spécialité Développement Web où j'ai pu m'initier à la fois au <strong>Front-End et Back-End</strong>, j'ai décidé d'approfondir avec une seconde formation en ligne pendant la période du confinement afin de consolider au mieux mes compétences, en <strong>alternance</strong> full-remote dans une <strong>agence web</strong>.
                 <br />

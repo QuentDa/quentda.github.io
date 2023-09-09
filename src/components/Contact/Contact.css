@@ -74,3 +74,10 @@
 .link-wrapper a svg:hover{
     transform: scale(1.1);
 }
+
+.contact .modal{
+    color: black;
+}
+.error-message{
+    color: #df7a7a;
+}

@@ -14,17 +14,20 @@
     font-weight: 700;
     font-size: 31px;
 }
-.project-row{
+
+.project-row {
     height: 500px;
     display: flex;
     gap: 30px;
     padding-bottom: 30px;
 }
-.project{
+
+.project {
     position: relative;
     cursor: pointer;
 }
-.project-info-category{
+
+.project-info-category {
     position: absolute;
     top: 3rem;
     left: 20px;
@@ -32,31 +35,38 @@
     text-transform: uppercase;
     font-weight: 600;
 }
-.project-info{
+
+.project-info {
     position: absolute;
     bottom: 3rem;
     left: 20px;
     color: white;
+    transition: all .5s ease-in-out;
 }
-.project-info h3{
+
+.project-info h3 {
     text-transform: uppercase;
     font-size: 32px;
     margin: 0;
 }
-.project-info p{
+
+.project-info p {
     margin: 5px 0;
     font-weight: 500;
 }
-.project-info div{
+
+.project-info div {
     text-transform: uppercase;
     font-weight: 600;
 }
-.project-image{
+
+.project-image {
     height: 100%;
     background: black;
     overflow: hidden;
 }
-.project-image img{
+
+.project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -64,71 +74,90 @@
     transition: .5s ease-in-out;
     transform: scale(1.05);
 }
-.project:hover .project-image img{
+
+.project:hover .project-image img {
     transform: scale(1.1);
-    opacity: 0.9;
+    opacity: 0.8;
 }
+
+.project:hover .project-info {
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.7);
+}
+
 .big-row {
     display: flex;
     width: 100%;
 }
-.big-row .big{
+
+.big-row .big {
     width: 70%;
 }
-.big-row .small{
+
+.big-row .small {
     width: 30%;
 }
+
 .small-row {
     display: flex;
     width: 100%;
 }
-.small-row .big{
+
+.small-row .big {
     width: 30%;
 }
-.small-row .small{
+
+.small-row .small {
     width: 70%;
 }
 
 @media screen and (max-width: 989px) {
-    .project{
+    .project {
         padding-bottom: 20px;
     }
+
     .projects-header {
         flex-direction: column;
         gap: 10px;
     }
-    .project-row{
+
+    .project-row {
         flex-direction: column;
         gap: 0px;
         padding-bottom: 0;
         height: auto;
     }
+
     .big-row {
         flex-direction: column;
     }
-    .big-row .big{
+
+    .big-row .big {
         width: 100%;
         height: 280px;
     }
-    .big-row .small{
+
+    .big-row .small {
         width: 100%;
         height: 280px;
     }
+
     .small-row {
         flex-direction: column;
     }
-    .small-row .big{
+
+    .small-row .big {
         width: 100%;
         height: 280px;
     }
-    .small-row .small{
+
+    .small-row .small {
         width: 100%;
         height: 280px;
     }
 }
 
 /* MODAL */
-.modal{
+.modal {
     z-index: 999;
     position: fixed;
     top: 0;
@@ -137,7 +166,8 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
-.modal-content{
+
+.modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -149,51 +179,62 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-.modal-header{
+
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
     width: 100%;
 }
-.modal-header h2{
+
+.modal-header h2 {
     text-transform: uppercase;
     font-size: 31px;
 }
-.modal-wrapper{
+
+.modal-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.modal-info{
+
+.modal-info {
     width: 40%;
 }
-.modal-wrapper img{
+
+.modal-wrapper img {
     max-width: 50%;
     max-height: 400px;
     objecet-fit: cover;
 }
-.modal-link-wrapper{
+
+.modal-link-wrapper {
     padding-top: 25px;
     display: flex;
     align-items: center;
 }
-.modal-link-wrapper a svg{
+
+.modal-link-wrapper a svg {
     width: 100%;
     height: 100%;
     transition: .3s ease-in-out;
 }
+
 .modal-link-wrapper a:hover svg {
     transform: scale(1.15);
 }
+
 @media screen and (max-width: 800px) {
-    .modal-wrapper{
+    .modal-wrapper {
         flex-direction: column;
     }
-    .modal-info{
+
+    .modal-info {
         width: 100%;
     }
-    .modal-wrapper img{
+
+    .modal-wrapper img {
         width: 100%;
     }
 }

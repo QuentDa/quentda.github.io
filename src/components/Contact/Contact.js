@@ -1,21 +1,43 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 import LinkedinSVG from '../../ressources/icons/LinkedinSVG';
 import GitHubSVG from '../../ressources/icons/GithubSVG';
+import Modal from '../Modal/Modal';
 
 export const Contact = () => {
     const form = useRef();
+    const [isOpen, setIsOpen] = useState(false);
+
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
 
     const sendEmail = (e) => {
         e.preventDefault();
+        if (name && phone && email && message !== '') {
+            emailjs.sendForm('service_oqbkv5v', 'template_b9kegpa', form.current, '9m3KXRw8rP1-JPNRZ')
+                .then((result) => {
+                    console.log(result.text);
+                    setIsOpen(true); // Ouvrir la modal lorsque le mail est envoyé avec succès
+                    setName('');
+                    setPhone('');
+                    setEmail('');
+                    setMessage('');
 
-        emailjs.sendForm('', '', form.current, '')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+                })
+                .catch((error) => {
+                    console.log(error.text);
+                });
+        } else {
+            console.log('Veuillez remplir tous les champs');
+        }
+    };
+
+    const handleModal = () => {
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -34,17 +56,20 @@ export const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <div className='form-wrapper'>
                         <div className='input-wrapper'>
-                            <input type="text" name="user_name" placeholder='Nom' />
-                            <input type="text" name="user_phone" placeholder='Numéro de téléphone' />
-                            <input type="email" name="user_email" placeholder='Adresse mail' />
+                            <input type="text" name="user_name" placeholder='Nom' onChange={(e) => setName(e.target.value)} value={name} />
+                            <input type="text" name="user_phone" placeholder='Numéro de téléphone' onChange={(e) => setPhone(e.target.value)} value={phone} />
+                            <input type="email" name="user_email" placeholder='Adresse mail' onChange={(e) => setEmail(e.target.value)} value={email} />
                         </div>
-                        <textarea name="message" placeholder='Votre message' />
+                        <textarea name="message" placeholder='Votre message' onChange={(e) => setMessage(e.target.value)} value={message} />
                     </div>
-                    
+
                     <div className='button-wrapper'>
-                            <button className='button-primary color' type='submit'>envoyer</button>
-                        </div>
+                        <button className='button-primary color' type='submit'>envoyer {isOpen}</button>
+                    </div>
                 </form>
+                {isOpen ? (
+                    <Modal isOpen={isOpen} handleModal={handleModal} title="Votre message a été envoyé !" />
+                ) : null}
             </div>
         </div>
     );

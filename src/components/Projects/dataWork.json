@@ -8,8 +8,8 @@
         "techno": "JS, Liquid, HTML, CSS",
         "github": "disabled",
         "live": "https://aluvy-design.com/",
-        "img": "/img/aluvy-bbq.jpg",
-        "secondImg": "/img/aluvy.jpg"
+        "img": "./img/aluvy-bbq.jpg",
+        "secondImg": "./img/aluvy.jpg"
     },
     {
         "id": 3,
@@ -20,8 +20,8 @@
         "techno": "JS, Liquid, HTML, CSS",
         "github": "disabled",
         "live": "https://truffeshenras.com/",
-        "img": "/img/henras.jpg",
-        "secondImg": "/img/henras2.jpg"
+        "img": "./img/henras.jpg",
+        "secondImg": "./img/henras2.jpg"
     },
     {
         "id": 4,
@@ -32,8 +32,8 @@
         "techno": "JS, Liquid, HTML, CSS",
         "github": "disabled",
         "live": "https://www.laboratoires-cap-ferret.com/",
-        "img": "/img/labocapferret.jpg",
-        "secondImg": "/img/labocapferret2.jpg"
+        "img": "./img/labocapferret.jpg",
+        "secondImg": "./img/labocapferret2.jpg"
     },
     {
         "id": 2,
@@ -44,8 +44,8 @@
         "techno": "JS, Liquid, JQuery, HTML, CSS",
         "github": "disabled",
         "live": "https://www.anakiparis.fr/",
-        "img": "/img/anaki.jpg",
-        "secondImg": "/img/anaki2.jpg"
+        "img": "./img/anaki.jpg",
+        "secondImg": "./img/anaki2.jpg"
     },
     {
         "id": 5,
@@ -56,7 +56,7 @@
         "techno": "JS, Liquid, HTML, CSS",
         "github": "disabled",
         "live": "https://www.nooance-paris.com/",
-        "img": "/img/nooance.jpg",
-        "secondImg": "/img/nooance2.jpg"
+        "img": "./img/nooance.jpg",
+        "secondImg": "./img/nooance2.jpg"
     }
 ]
