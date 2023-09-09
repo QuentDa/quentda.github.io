@@ -1,0 +1,21 @@
+.about{
+    padding: 15rem 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.about p{
+    font-weight: 400;
+    font-size: 28px;
+}
+@media screen and (max-width: 851px) {
+    .about p{
+        font-size: 24px;
+    }
+}

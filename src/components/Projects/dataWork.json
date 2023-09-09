@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Aluvy Design",
+        "category": "Agence Web",
+        "content": "E-commerce Shopify de barbecues plancha au gaz haut de gamme fabriqué en france.",
+        "fullContent": "Développement d'un site e-commerce Shopify pour la vente de barbecues plancha au gaz haut de gamme fabriqués en France. Ma mission a été de concevoir un site responsive, en personnalisant un thème existant. Personnalisation du thème et des éléments visuels, conception de sections personnalisées from scratch, mise en page et optimisation des performances (tests Lighthouse) et du SEO. Accompagnement et suivi du projet sur plusieurs mois avec des missions de maintenance.",
+        "techno": "JS, Liquid, HTML, CSS",
+        "github": "disabled",
+        "live": "https://aluvy-design.com/",
+        "img": "/img/aluvy-bbq.jpg",
+        "secondImg": "/img/aluvy.jpg"
+    },
+    {
+        "id": 3,
+        "title": "TRUFFES Henras",
+        "category": "Agence Web",
+        "content": "E-commerce Shopify de vente de truffes et produits associés en France.",
+        "fullContent": "En tant que développeur principal dans ce projet, j'ai mené la refonte et la migration d'un site e-commerce de Magento à Shopify. Nous avons collaboré avec l'équipe et le client pour créer une expérience visuelle unique, développer des pages de recettes interactives, mettre en place des algorithmes de recommandations, des systèmes de calendrier de vente et de disponibilité supplémentaire à ce que propose nativement le back-office de Shopify. J'ai également créé des sections personnalisées, assuré le responsive du site, optimisé la performance avec Lighthouse, et mis un accent sur le référencement. Mon rôle a également inclus un suivi attentif pour garantir le succès continu du site.",
+        "techno": "JS, Liquid, HTML, CSS",
+        "github": "disabled",
+        "live": "https://truffeshenras.com/",
+        "img": "/img/henras.jpg",
+        "secondImg": "/img/henras2.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Laboratoires du Cap Ferret",
+        "category": "Agence Web",
+        "content": "E-commerce Shopify de vente de produits de beauté",
+        "fullContent": "Mission de refonte intégrale d'une boutique qui avait une boutique existante sur Shopify presque inexploitable. Le but a été de faire une refonte complète tout en gardant leur identité puis de tout moderniser, et de rendre l'intégralité personnalisable et maintenable par le client. Développement de sections from scratch, mise en page et optimisation des performances.",
+        "techno": "JS, Liquid, HTML, CSS",
+        "github": "disabled",
+        "live": "https://www.laboratoires-cap-ferret.com/",
+        "img": "/img/labocapferret.jpg",
+        "secondImg": "/img/labocapferret2.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Anaki paris",
+        "category": "Agence Web",
+        "content": "E-commerce Shopify de chaussures et d'accessoires de mode fait en France",
+        "fullContent": "Anaki Paris est une marque de chaussures et d'accessoires de mode basée à Paris, en France. La marque est connue pour ses designs élégants et tendance, ainsi que pour la qualité de ses produits. Développement de sections from scratch responsive, mise en page et optimisation des performances. Accompagnement et suivi du projet sur plusieurs mois avec des missions de maintenance.",
+        "techno": "JS, Liquid, JQuery, HTML, CSS",
+        "github": "disabled",
+        "live": "https://www.anakiparis.fr/",
+        "img": "/img/anaki.jpg",
+        "secondImg": "/img/anaki2.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Nooance",
+        "category": "Agence Web",
+        "content": "E-commerce Shopify de bien-être, produits et équipements de beauté",
+        "fullContent": "Nooance est une marque de bien-être proposant des produits et équipement de beauté. Développement de sections from scratch responsive, mise en page et optimisation des performances. Accompagnement et suivi du projet sur plusieurs mois avec des missions de maintenance. Seconde mission pour une refonte V2 de leur thème. Collaboration étroite entre nos équipes et le client.",
+        "techno": "JS, Liquid, HTML, CSS",
+        "github": "disabled",
+        "live": "https://www.nooance-paris.com/",
+        "img": "/img/nooance.jpg",
+        "secondImg": "/img/nooance2.jpg"
+    }
+]

@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+* {
+  font-family: "San Francisco";
+  letter-spacing: -1px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -5px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+}
+
+p.thin {
+  font-weight: 200;
+}
+
+p.ultralight {
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  background: #f9f9f9;
+}
+
+.page-width {
+  max-width: 80%;
+  margin: auto;
+}
+button {
+  position: relative;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+}
+.button-primary{
+  padding: 20px 50px;
+}
+button::after, button::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.4s ease;
+  border-radius: 2px;
+}
+button::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: black;
+  border-right-color: black;
+}
+button::before{
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: black;
+  border-left-color: black;
+}
+button:hover:after, button:hover:before{
+  border-bottom-color: black;
+  border-right-color: black;
+  border-top-color: black;
+  border-left-color: black;
+  width: 100%;
+  height: 100%;
+}
+button.white::after {
+  border-bottom-color: white;
+  border-right-color: white;
+}
+button.white::before {
+  border-top-color: white;
+  border-left-color: white;
+}
+button.white{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button.white:hover::after,
+button.white:hover::before {
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: white;
+  border-left-color: white;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button.color::after {
+  border-bottom-color: #11998e;
+  border-right-color: #11998e;
+}
+button.color::before {
+  border-top-color: #38ef7d;
+  border-left-color: #38ef7d;
+}
+button.color{
+  color: white;
+}
+button.color:hover::after,
+button.color:hover::before {
+  border-bottom-color: #11998e;
+  border-right-color: #11998e;
+  border-top-color: #38ef7d;
+  border-left-color: #38ef7d;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-container {
+  width: 24px;
+  height: 24px;
+}
+
+.svg-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .page-width {
+    max-width: 90%;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .button-primary{
+    padding: 20px 30px;
   }
 }
